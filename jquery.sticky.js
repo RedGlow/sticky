@@ -232,18 +232,18 @@
           }
         });
       },
-	  setTopSpacing: function(topSpacing) {
+      setTopSpacing: function(topSpacing) {
         this.each(function() {
           var that = this;
           var unstickyElement = $(that);
 
-		  for(var i = 0; i < sticked.length; i++) {
+          for(var i = 0; i < sticked.length; i++) {
             if (sticked[i].stickyElement.get(0) === that) {
-			  sticked[i].topSpacing = topSpacing;
+              sticked[i].topSpacing = topSpacing;
             }
           }
-	    });
-		return this.sticky('update');
+        });
+        return this.sticky('update');
       }
     };
 
